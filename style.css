@@ -36,8 +36,9 @@ body {
     color: var(--verde);
 }
 
+
 .botao {
-    font-family: "Crakra Petch", sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -60,6 +61,33 @@ body {
     display: block;
 }
 
+.botao.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display:block;
+}
+
+.aba-conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
 
 @media screen and (min-width: 768px) {
     .botoes {
